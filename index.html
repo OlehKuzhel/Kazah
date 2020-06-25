@@ -12,10 +12,31 @@
       <meta content="" property=og:description>
       <meta content="width=device-width,user-scalable=no" name=viewport id=viewport>
       <link href=favicon.ico rel="shortcut icon" type=image/x-icon>
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap&subset=cyrillic" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="css/main.css">
       <link rel="stylesheet" type="text/css" href="css/media.css">
    </head>
    <body>
+    <div class="preloader">
+        <div class="stage">
+      <div class="box">
+        <div class="front"></div>
+        <div class="back"></div>
+        <div class="top"></div>
+        <div class="bottom"></div>
+        <div class="left"></div>
+        <div class="right"></div>
+      </div>
+      <div class="box">
+        <div class="front"></div>
+        <div class="back"></div>
+        <div class="top"></div>
+        <div class="bottom"></div>
+        <div class="left"></div>
+        <div class="right"></div>
+      </div>
+    </div>
+    </div>
      
       <header class="section section-header">
         <div class="wrapper">
@@ -40,6 +61,11 @@
         </div>
       </header>
       <section class="section section-main">
+            <div class="square">
+                <div class="square-item" id="square1"><img src="img/square/1.png" alt="" data-depth="0.5"></div>
+                <div class="square-item" id="square2"><img src="img/square/2.png" alt="" data-depth="0.75"></div>
+                <div class="square-item" id="square3"><img src="img/square/3.png" alt="" data-depth="1"></div>
+            </div>
             <div class="lines-v">
                 <div class="lines-v-items">
                     <span class="lines-v-item bl">
@@ -145,6 +171,10 @@
         </div>
       </section>
       <section class="section section-about">
+        <div class="square"  >
+                <div class="square-item" id="square4"><img src="img/square/4.png"  data-depth="0.5" alt=""></div>
+                <div class="square-item" id="square5"><img src="img/square/5.png"  data-depth="0.75" alt=""></div>
+            </div>
         <div class="lines">
             <div class="lines-items">
                 <span class="lines-item"></span>
@@ -155,17 +185,47 @@
             </div>
           </div>
         <div class="wrapper">
-
-         
-          <span class="hovertitle">С 2010 года</span>
+          <span class="hovertitle" id="hovertitle"><span data-depth="0.2">С 2010 года</span></span>
           <div class="about">
             <div class="title">
               <h2 class="h2 st bl ta-c">
                 <span>компания AYACOM</span> осуществляет полный спектр работ по проектированию, монтажу, прокладке слаботочных сетей (СКС) 
               </h2>
             </div>
-            <div class="about-cloud">
-                
+            <div class="about-cloud" id="cloud">
+                <div class="about-cloud__bg" data-depth="0.2">
+                    <svg viewBox="0 0 1230 269" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="lines">
+      <path d="M1 152.998l1069-152-159 218-422-204-271 188 469-127 543 95-735 97-337-177 670-12-187 158-100-131 147-29" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <path d="M1 152.998v0l1069-152v0l-159 218v0l-422-204v0l-271 188v0l469-127v0l543 95v0l-735 97v0l-337-177v0l670-12v0l-187 158v0l-100-131v0l147-29v0" fill="none" stroke="#e31e24" stroke-miterlimit="20" stroke-width="2" clip-path="url(#lines)" opacity=".11"/>
+  <path d="M688.058 75.833l-.142 1.001 10.026 1.676.141-1.003z" fill="#e31e24"/>
+  <path d="M687.856 75.519l.288.958-10 2.999-.288-.957zM495.243 267.562l-.486.873-18-10 .486-.874z" fill="#e31e24"/>
+  <path d="M514.297 264.523l.125.992-20.43 2.574-.125-.992zM641.387 235.682l-.774.633-9-11 .774-.634zM640.502 236.542l.668.781 11.06-9.581-.668-.782zM158.76 91.438l.48-.878 11 6-.48.877z" fill="#e31e24"/>
+  <path d="M159.13 91.405l-.01-1 12.53-.127.01 1zM910.224 217.551l-.448.895-14-7.001.448-.894zM910.909 218.81l-.81-.587 9.196-12.667.81.587zM215.044 204.949l-.24-.97 9.705-2.41.24.97z" fill="#e31e24"/>
+  <path d="M214.3 205.4l-.6-.802 8-6 .6.8zM499.932 20.43l.47-.917-11.334-5.6-.47.916z" fill="#e31e24"/>
+  <path d="M479.287 21.408l-.574-.819 10-7 .574.819zM1068.942 1.502l.116.993-17 2-.117-.993z" fill="#e31e24"/>
+  <path d="M1068.253.952l.816.58-9.892 13.968-.816-.579zM1228.09 170.506l-.18.983-22-3.999.18-.984z" fill="#e31e24"/>
+  <path d="M1227.951 169.691l.162.987-22.064 3.628-.163-.988zM828 78.999v1h-13v-1z" fill="#e31e24"/>
+  <path d="M827.23 78.942l.637.77-10.029 8.273-.636-.771zM541.6 106.298l.8-.6 6 8-.8.6z" fill="#e31e24"/>
+  <path d="M542.522 106.883l-.188-.98 9.82-1.887.189.981z" fill="#e31e24"/>
+  <path d="M.884 153.484l.232-.972 214 51-.232.973z" fill="#e31e24" opacity=".11"/>
+  <path d="M1.83 154.81l-.185-.984 23.67-4.441.185.983z" fill="#e31e24"/>
+  <path d="M1.822 155.07l.197-.98 23.612 4.743-.197.98z" fill="#e31e24"/>
+</svg>
+                </div>
+                <div class="about-cloud__tags" data-depth="0.6">
+                  <a href="#" class="link link--tag">Бизнес центр</a>
+                  <a href="#" class="link link--tag">Склад</a>
+                  <a href="#" class="link link--tag">Производственные <br>предприятия</a>
+                  <a href="#" class="link link--tag">Офис</a>
+                  <a href="#" class="link link--tag">Торговые центры</a>
+                  <a href="#" class="link link--tag">Общежитие</a>
+                  <a href="#" class="link link--tag">Медучреждения</a>
+                  <a href="#" class="link link--tag">Банк</a>
+                </div>
             </div>
             </div>
             <div class="advanced">
@@ -497,6 +557,10 @@
         </div>
       </section>
       <section class="section section-system">
+        <div class="square" >
+                <div class="square-item" id="square6"><img src="img/square/4.png" alt="" data-depth="0.5"></div>
+                <div class="square-item" id="square7"><img src="img/square/5.png" alt="" data-depth="0.75"></div>
+            </div>
         <div class="lines">
             <div class="lines-items">
                 <span class="lines-item"></span>
@@ -525,7 +589,12 @@
                     <div class="system-content__col">
                         
                     
-                    <a href="#" class="link link--system">
+                    <a href="#" class="link link--system fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
                         <span class="img">
                             <img src="img/iconw/1.png" alt="">
                         </span>
@@ -534,7 +603,12 @@
                         </span>
                     </a>
                     
-                    <a href="#" class="link link--system">
+                    <a href="#" class="link link--system fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='CCTV'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
                         <span class="img">
                             <img src="img/iconw/3.png" alt="">
                         </span>
@@ -543,7 +617,12 @@
                         </span>
                     </a>
                     
-                    <a href="#" class="link link--system">
+                    <a href="#" class="link link--system fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='ВОЛС'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
                         <span class="img">
                             <img src="img/iconw/5.png" alt="">
                         </span>
@@ -552,7 +631,12 @@
                         </span>
                     </a>
                     
-                    <a href="#" class="link link--system">
+                    <a href="#" class="link link--system fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Беспроводные сети'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
                         <span class="img">
                             <img src="img/iconw/7.png" alt="">
                         </span>
@@ -564,7 +648,12 @@
 
 </div>
 <div class="system-content__col">
-                    <a href="#" class="link link--system">
+                    <a href="#" class="link link--system fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Системы бесперебойного питания'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
                         
                         <span class="text">
                             Системы бесперебойного<br>питания
@@ -573,7 +662,12 @@
                             <img src="img/iconw/2.png" alt="">
                         </span>
                     </a>
-                    <a href="#" class="link link--system">
+                    <a href="#" class="link link--system fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Таймлапс съемка'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
                         
                         <span class="text">
                             Таймлапс съемка
@@ -582,7 +676,12 @@
                             <img src="img/iconw/4.png" alt="">
                         </span>
                     </a>
-                    <a href="#" class="link link--system">
+                    <a href="#" class="link link--system fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Системы аудио оповещения'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
                         
                         <span class="text">
                             Системы аудио оповещения
@@ -591,7 +690,12 @@
                             <img src="img/iconw/6.png" alt="">
                         </span>
                     </a>
-                    <a href="#" class="link link--system">
+                    <a href="#" class="link link--system fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='IPTV и цифровые вывески'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
                         
                         <span class="text">
                             IPTV и цифровые вывески
@@ -665,6 +769,11 @@
         </div>
       </section>
       <section class="section section-coorp">
+        <div class="square" >
+                <div class="square-item" id="square8"><img src="img/square/4.png" alt="" data-depth="0.5"></div>
+                <div class="square-item" id="square9"><img src="img/square/5.png" alt="" data-depth="0.75"></div>
+                <div class="square-item" id="square10"><img src="img/square/5.png" alt="" data-depth="1"></div>
+            </div>
         <div class="lines">
             <div class="lines-items">
                 <span class="lines-item"></span>
@@ -681,9 +790,54 @@
                 Корпоративные сети
               </h2>
               <p class="p ss bl ta-c">
-                Наши специалисты организуют рабочие места и сетевую инфраструктуру в бизнес-центре, 
+                Наши специалисты организуют рабочие места и сетевую инфраструктуру в бизнес-центре,<br>
 помогут с построением сетей в офисе
               </p>
+            </div>
+            <div class="coorp-items">
+                <div class="coorp-item">
+                    <div class="img">
+                        <img src="img/iconc/1.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="p ph bl ta-c">
+                            Проектирование и организация<br> сетей передачи данных
+                        </p>
+                    </div>
+                </div>
+                <div class="coorp-item">
+                    <div class="img">
+                        <img src="img/iconc/2.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="p ph bl ta-c">
+                            Беспроводные корпоративные сети<br>
+IP телефония, видеоконференцсвязь
+
+                        </p>
+                    </div>
+                </div>
+                <div class="coorp-item">
+                    <div class="img">
+                        <img src="img/iconc/3.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="p ph bl ta-c">
+                            Оптические и беспроводные<br> магистральные линии связи
+
+                        </p>
+                    </div>
+                </div>
+                <div class="coorp-item">
+                    <div class="img">
+                        <img src="img/iconc/4.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="p ph bl ta-c">
+                            Сетевая безопасность
+                        </p>
+                    </div>
+                </div>
             </div>
           </div>
         </div>
@@ -715,6 +869,11 @@
         </div>
       </section>
       <section class="section section-montaz">
+        <div class="square" >
+                <div class="square-item" id="square11"><img src="img/square/4.png" alt="" data-depth="0.5"></div>
+                <div class="square-item" id="square12"><img src="img/square/5.png" alt="" data-depth="0.75"></div>
+                <div class="square-item" id="square13"><img src="img/square/4.png" alt="" data-depth="1"></div>
+            </div>
         <div class="lines">
             <div class="lines-items">
                 <span class="lines-item"></span>
@@ -821,15 +980,25 @@
             </div>
             <div class="works-content">
                 <div class="works-content__head">
-                    <a href="#" data-tab="office" class="link link--tab active">Офисы</a>
-                    <a href="#" data-tab="sklad" class="link link--tab">склады</a>
-                    <a href="#" data-tab="comp" class="link link--tab">Строительные компании</a>
+                    <a href="#" data-tabs="0" class="link link--tab active">Офисы</a>
+                    <a href="#" data-tabs="1" class="link link--tab">склады</a>
+                    <a href="#" data-tabs="2" class="link link--tab">Строительные компании</a>
                 </div>
                 <div class="works-content__slider">
-                <div class="works-slider swiper-container">
+                    <div class="works-tabs-slider swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="tabs-slide swiper-slide">
+                                
+                            
+                <div class="works-slider office-slider swiper-container">
                     <div class="swiper-wrapper">
                         <div class="works-slide big-slide swiper-slide">
-                                <div class="works-slide__main">
+                                <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
                                     <div class="works-slide__photo">
                                         <img src="img/woks/1.jpg" alt="">
                                     </div>
@@ -845,7 +1014,12 @@
                             
                         </div>
                         <div class="works-slide swiper-slide">
-                            <div class="works-slide__main">
+                            <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
                                     <div class="works-slide__photo">
                                         <img src="img/woks/1.jpg" alt="">
                                     </div>
@@ -858,7 +1032,12 @@
                                         </p>
                                 </div>
                             </div>
-                            <div class="works-slide__main">
+                            <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
                                     <div class="works-slide__photo">
                                         <img src="img/woks/1.jpg" alt="">
                                     </div>
@@ -873,7 +1052,12 @@
                             </div>
                         </div>
                         <div class="works-slide swiper-slide">
-                            <div class="works-slide__main">
+                            <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
                                     <div class="works-slide__photo">
                                         <img src="img/woks/1.jpg" alt="">
                                     </div>
@@ -886,7 +1070,12 @@
                                         </p>
                                 </div>
                             </div>
-                            <div class="works-slide__main">
+                            <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
                                     <div class="works-slide__photo">
                                         <img src="img/woks/1.jpg" alt="">
                                     </div>
@@ -901,7 +1090,12 @@
                             </div>
                         </div>
                         <div class="works-slide big-slide swiper-slide">
-                                <div class="works-slide__main">
+                                <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
                                     <div class="works-slide__photo">
                                         <img src="img/woks/1.jpg" alt="">
                                     </div>
@@ -917,7 +1111,12 @@
                             
                         </div>
                         <div class="works-slide swiper-slide">
-                            <div class="works-slide__main">
+                            <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
                                     <div class="works-slide__photo">
                                         <img src="img/woks/1.jpg" alt="">
                                     </div>
@@ -930,7 +1129,12 @@
                                         </p>
                                 </div>
                             </div>
-                            <div class="works-slide__main">
+                            <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
                                     <div class="works-slide__photo">
                                         <img src="img/woks/1.jpg" alt="">
                                     </div>
@@ -945,7 +1149,12 @@
                             </div>
                         </div>
                         <div class="works-slide swiper-slide">
-                            <div class="works-slide__main">
+                            <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
                                     <div class="works-slide__photo">
                                         <img src="img/woks/1.jpg" alt="">
                                     </div>
@@ -958,7 +1167,12 @@
                                         </p>
                                 </div>
                             </div>
-                            <div class="works-slide__main">
+                            <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
                                     <div class="works-slide__photo">
                                         <img src="img/woks/1.jpg" alt="">
                                     </div>
@@ -973,7 +1187,12 @@
                             </div>
                         </div>
                         <div class="works-slide  big-slide swiper-slide">
-                                <div class="works-slide__main">
+                                <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
                                     <div class="works-slide__photo">
                                         <img src="img/woks/1.jpg" alt="">
                                     </div>
@@ -989,7 +1208,12 @@
                             
                         </div>
                         <div class="works-slide swiper-slide">
-                            <div class="works-slide__main">
+                            <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
                                     <div class="works-slide__photo">
                                         <img src="img/woks/1.jpg" alt="">
                                     </div>
@@ -1002,7 +1226,12 @@
                                         </p>
                                 </div>
                             </div>
-                            <div class="works-slide__main">
+                            <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
                                     <div class="works-slide__photo">
                                         <img src="img/woks/1.jpg" alt="">
                                     </div>
@@ -1017,7 +1246,12 @@
                             </div>
                         </div>
                         <div class="works-slide swiper-slide">
-                            <div class="works-slide__main">
+                            <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
                                     <div class="works-slide__photo">
                                         <img src="img/woks/1.jpg" alt="">
                                     </div>
@@ -1030,7 +1264,12 @@
                                         </p>
                                 </div>
                             </div>
-                            <div class="works-slide__main">
+                            <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
                                     <div class="works-slide__photo">
                                         <img src="img/woks/1.jpg" alt="">
                                     </div>
@@ -1044,12 +1283,608 @@
                                 </div>
                             </div>
                         </div>
-                        
-                        
                     </div>
                     
                 </div>
-                <a href="#" class="link link--nav works--prev"><i class="fas fa-chevron-left"></i></a>
+            </div>
+            <div class="tabs-slide swiper-slide">
+                <div class="works-slider sklad-slider swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="works-slide big-slide swiper-slide">
+                                <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
+                                    <div class="works-slide__photo">
+                                        <img src="img/woks/1.jpg" alt="">
+                                    </div>
+                                    <div class="works-slide__content">
+                                        <h3 class="h3 hw wh">
+                                            Заголовок 
+                                        </h3>
+                                        <p class="p ph pw wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                        </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="works-slide swiper-slide">
+                            <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
+                                    <div class="works-slide__photo">
+                                        <img src="img/woks/1.jpg" alt="">
+                                    </div>
+                                    <div class="works-slide__content">
+                                        <h3 class="h3 hw wh">
+                                            Заголовок 
+                                        </h3>
+                                        <p class="p ph pw wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                        </p>
+                                </div>
+                            </div>
+                            <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
+                                    <div class="works-slide__photo">
+                                        <img src="img/woks/1.jpg" alt="">
+                                    </div>
+                                    <div class="works-slide__content">
+                                        <h3 class="h3 ph hw wh">
+                                            Заголовок 
+                                        </h3>
+                                        <p class="p ph pw wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="works-slide swiper-slide">
+                            <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
+                                    <div class="works-slide__photo">
+                                        <img src="img/woks/1.jpg" alt="">
+                                    </div>
+                                    <div class="works-slide__content">
+                                        <h3 class="h3 hw wh">
+                                            Заголовок 
+                                        </h3>
+                                        <p class="p ph pw wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                        </p>
+                                </div>
+                            </div>
+                            <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
+                                    <div class="works-slide__photo">
+                                        <img src="img/woks/1.jpg" alt="">
+                                    </div>
+                                    <div class="works-slide__content">
+                                        <h3 class="h3 hw wh">
+                                            Заголовок 
+                                        </h3>
+                                        <p class="p ph pw wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="works-slide big-slide swiper-slide">
+                                <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
+                                    <div class="works-slide__photo">
+                                        <img src="img/woks/1.jpg" alt="">
+                                    </div>
+                                    <div class="works-slide__content">
+                                        <h3 class="h3 hw wh">
+                                            Заголовок 
+                                        </h3>
+                                        <p class="p ph pw wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                        </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="works-slide swiper-slide">
+                            <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
+                                    <div class="works-slide__photo">
+                                        <img src="img/woks/1.jpg" alt="">
+                                    </div>
+                                    <div class="works-slide__content">
+                                        <h3 class="h3 hw wh">
+                                            Заголовок 
+                                        </h3>
+                                        <p class="p ph pw wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                        </p>
+                                </div>
+                            </div>
+                            <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
+                                    <div class="works-slide__photo">
+                                        <img src="img/woks/1.jpg" alt="">
+                                    </div>
+                                    <div class="works-slide__content">
+                                        <h3 class="h3 hw wh">
+                                            Заголовок 
+                                        </h3>
+                                        <p class="p ph pw wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="works-slide swiper-slide">
+                            <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
+                                    <div class="works-slide__photo">
+                                        <img src="img/woks/1.jpg" alt="">
+                                    </div>
+                                    <div class="works-slide__content">
+                                        <h3 class="h3 hw wh">
+                                            Заголовок 
+                                        </h3>
+                                        <p class="p ph pw wh">
+                                           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                        </p>
+                                </div>
+                            </div>
+                            <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
+                                    <div class="works-slide__photo">
+                                        <img src="img/woks/1.jpg" alt="">
+                                    </div>
+                                    <div class="works-slide__content">
+                                        <h3 class="h3 hw wh">
+                                            Заголовок 
+                                        </h3>
+                                        <p class="p ph pw wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="works-slide  big-slide swiper-slide">
+                                <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
+                                    <div class="works-slide__photo">
+                                        <img src="img/woks/1.jpg" alt="">
+                                    </div>
+                                    <div class="works-slide__content">
+                                        <h3 class="h3 hw wh">
+                                            Заголовок 
+                                        </h3>
+                                        <p class="p ph pw wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                        </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="works-slide swiper-slide">
+                            <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
+                                    <div class="works-slide__photo">
+                                        <img src="img/woks/1.jpg" alt="">
+                                    </div>
+                                    <div class="works-slide__content">
+                                        <h3 class="h3 hw wh">
+                                            Заголовок 
+                                        </h3>
+                                        <p class="p ph pw wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                        </p>
+                                </div>
+                            </div>
+                            <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
+                                    <div class="works-slide__photo">
+                                        <img src="img/woks/1.jpg" alt="">
+                                    </div>
+                                    <div class="works-slide__content">
+                                        <h3 class="h3 hw wh">
+                                            Заголовок 
+                                        </h3>
+                                        <p class="p ph pw wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="works-slide swiper-slide">
+                            <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
+                                    <div class="works-slide__photo">
+                                        <img src="img/woks/1.jpg" alt="">
+                                    </div>
+                                    <div class="works-slide__content">
+                                        <h3 class="h3 hw wh">
+                                            Заголовок 
+                                        </h3>
+                                        <p class="p ph pw wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                        </p>
+                                </div>
+                            </div>
+                            <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
+                                    <div class="works-slide__photo">
+                                        <img src="img/woks/1.jpg" alt="">
+                                    </div>
+                                    <div class="works-slide__content">
+                                        <h3 class="h3 hw wh">
+                                            Заголовок 
+                                        </h3>
+                                        <p class="p ph pw wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="tabs-slide swiper-slide">
+                <div class="works-slider comp-slider swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="works-slide big-slide swiper-slide">
+                                <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
+                                    <div class="works-slide__photo">
+                                        <img src="img/woks/1.jpg" alt="">
+                                    </div>
+                                    <div class="works-slide__content">
+                                        <h3 class="h3 hw wh">
+                                            Заголовок 
+                                        </h3>
+                                        <p class="p ph pw wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                        </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="works-slide swiper-slide">
+                            <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
+                                    <div class="works-slide__photo">
+                                        <img src="img/woks/1.jpg" alt="">
+                                    </div>
+                                    <div class="works-slide__content">
+                                        <h3 class="h3 hw wh">
+                                            Заголовок 
+                                        </h3>
+                                        <p class="p ph pw wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                        </p>
+                                </div>
+                            </div>
+                            <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
+                                    <div class="works-slide__photo">
+                                        <img src="img/woks/1.jpg" alt="">
+                                    </div>
+                                    <div class="works-slide__content">
+                                        <h3 class="h3 ph hw wh">
+                                            Заголовок 
+                                        </h3>
+                                        <p class="p ph pw wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="works-slide swiper-slide">
+                            <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
+                                    <div class="works-slide__photo">
+                                        <img src="img/woks/1.jpg" alt="">
+                                    </div>
+                                    <div class="works-slide__content">
+                                        <h3 class="h3 hw wh">
+                                            Заголовок 
+                                        </h3>
+                                        <p class="p ph pw wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                        </p>
+                                </div>
+                            </div>
+                            <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
+                                    <div class="works-slide__photo">
+                                        <img src="img/woks/1.jpg" alt="">
+                                    </div>
+                                    <div class="works-slide__content">
+                                        <h3 class="h3 hw wh">
+                                            Заголовок 
+                                        </h3>
+                                        <p class="p ph pw wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="works-slide big-slide swiper-slide">
+                                <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
+                                    <div class="works-slide__photo">
+                                        <img src="img/woks/1.jpg" alt="">
+                                    </div>
+                                    <div class="works-slide__content">
+                                        <h3 class="h3 hw wh">
+                                            Заголовок 
+                                        </h3>
+                                        <p class="p ph pw wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                        </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="works-slide swiper-slide">
+                            <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
+                                    <div class="works-slide__photo">
+                                        <img src="img/woks/1.jpg" alt="">
+                                    </div>
+                                    <div class="works-slide__content">
+                                        <h3 class="h3 hw wh">
+                                            Заголовок 
+                                        </h3>
+                                        <p class="p ph pw wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                        </p>
+                                </div>
+                            </div>
+                            <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
+                                    <div class="works-slide__photo">
+                                        <img src="img/woks/1.jpg" alt="">
+                                    </div>
+                                    <div class="works-slide__content">
+                                        <h3 class="h3 hw wh">
+                                            Заголовок 
+                                        </h3>
+                                        <p class="p ph pw wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="works-slide swiper-slide">
+                            <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
+                                    <div class="works-slide__photo">
+                                        <img src="img/woks/1.jpg" alt="">
+                                    </div>
+                                    <div class="works-slide__content">
+                                        <h3 class="h3 hw wh">
+                                            Заголовок 
+                                        </h3>
+                                        <p class="p ph pw wh">
+                                           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                        </p>
+                                </div>
+                            </div>
+                            <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
+                                    <div class="works-slide__photo">
+                                        <img src="img/woks/1.jpg" alt="">
+                                    </div>
+                                    <div class="works-slide__content">
+                                        <h3 class="h3 hw wh">
+                                            Заголовок 
+                                        </h3>
+                                        <p class="p ph pw wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="works-slide  big-slide swiper-slide">
+                                <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
+                                    <div class="works-slide__photo">
+                                        <img src="img/woks/1.jpg" alt="">
+                                    </div>
+                                    <div class="works-slide__content">
+                                        <h3 class="h3 hw wh">
+                                            Заголовок 
+                                        </h3>
+                                        <p class="p ph pw wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                        </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="works-slide swiper-slide">
+                            <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
+                                    <div class="works-slide__photo">
+                                        <img src="img/woks/1.jpg" alt="">
+                                    </div>
+                                    <div class="works-slide__content">
+                                        <h3 class="h3 hw wh">
+                                            Заголовок 
+                                        </h3>
+                                        <p class="p ph pw wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                        </p>
+                                </div>
+                            </div>
+                            <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
+                                    <div class="works-slide__photo">
+                                        <img src="img/woks/1.jpg" alt="">
+                                    </div>
+                                    <div class="works-slide__content">
+                                        <h3 class="h3 hw wh">
+                                            Заголовок 
+                                        </h3>
+                                        <p class="p ph pw wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="works-slide swiper-slide">
+                            <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
+                                    <div class="works-slide__photo">
+                                        <img src="img/woks/1.jpg" alt="">
+                                    </div>
+                                    <div class="works-slide__content">
+                                        <h3 class="h3 hw wh">
+                                            Заголовок 
+                                        </h3>
+                                        <p class="p ph pw wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                        </p>
+                                </div>
+                            </div>
+                            <div class="works-slide__main fancybtn" data-popup="#working" data-img='img/woks/1.jpg' 
+                                data-title='Сети передачи данных'
+                                data-text='<p class="p ph wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                                            </p>'
+                                >
+                                    <div class="works-slide__photo">
+                                        <img src="img/woks/1.jpg" alt="">
+                                    </div>
+                                    <div class="works-slide__content">
+                                        <h3 class="h3 hw wh">
+                                            Заголовок 
+                                        </h3>
+                                        <p class="p ph pw wh">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                    <a href="#" class="link link--nav works--prev"><i class="fas fa-chevron-left"></i></a>
                     <a href="#" class="link link--nav works--next"><i class="fas fa-chevron-right"></i></a>
             </div>
             </div>
@@ -1057,6 +1892,11 @@
         </div>
       </section>
       <section class="section section-happy">
+        <div class="square">
+            <div class="square-item" id="square14"><img src="img/square/4.png" alt="" data-depth="0.5"></div>
+            <div class="square-item" id="square15"><img src="img/square/5.png" alt="" data-depth="0.75"></div>
+            <div class="square-item" id="square16"><img src="img/square/4.png" alt="" data-depth="1"></div>
+        </div>
         <div class="lines">
             <div class="lines-items">
                 <span class="lines-item"></span>
@@ -1290,10 +2130,6 @@
             </div>
           </div>
           </div>
-        <!-- </div> -->
-        <!-- </div> -->
-        <!-- <div class="footer"> -->
-            <!-- <div class="wrapper"> -->
                 <div class="footer-content">
                     <a href="#" class="link link--fresh">
                       <img src="img/logo_fresh_new.png" alt="logo_fresh_new">
@@ -1306,6 +2142,34 @@
             
         </div>
       </section>
+        
+      <div id="working" style="display:none" class="popup popup-working">
+         <div class="popup-side">
+            <div class="popup-content">
+                <div class="working-img">
+                    <img src="img/sl.png" alt="sl">
+                </div>
+                <div class="working-content">
+                    <h3 class="h3 h3wk wh">Сети передачи данных</h3>
+                       <!-- <p class="p ph wh">
+                          Они представляют собой группу устройств связи, которые объединены между собой при помощи каналов передачи данных. Также сюда входят и различные коммуникационные устройства, гарантирующие обмен сообщениями между конечными устройствами.</p>
+                        <p class="p ph wh">
+                        Дистанционная передача данных на базе компьютерных сетей и современных технических средств связи является телекоммуникацией. Информация тут может поступать в самых различных видах: звуки, цифровые сигналы, изображения и печатные слова. </p> -->
+                </div>
+            </div>
+         </div>
+      </div>
+
+      <div id="thanks" style="display:none" class="popup popup-thanks">
+         <div class="popup-side">
+            <div class="popup-content">
+                <h3 class="h3 h3p wh ta-c">Спасибо за заявку</h3>
+               <p class="p ph wh ta-c">
+                  В течение 1-2 дней наши специалисты произведут расчет сметы
+               </p>
+            </div>
+         </div>
+      </div>
       
       <script src=js/libs.min.js></script>
       <script src=js/main.js></script>
