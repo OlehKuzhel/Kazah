@@ -47,12 +47,12 @@
               </a>
             </div>
             <ul class="header-menu">
-              <li><a href="#" class="link link--menu">о компании</a></li>
-              <li><a href="#" class="link link--menu">решения</a></li>
-              <li><a href="#" class="link link--menu">этапы</a></li>
-              <li><a href="#" class="link link--menu">проекты</a></li>
-              <li><a href="#" class="link link--menu">отзывы</a></li>
-              <li><a href="#" class="link link--menu">контакты</a></li>
+              <li><a href="#" class="link link--menu scroll" data-href="#about">о компании</a></li>
+              <li><a href="#" class="link link--menu scroll" data-href="#solutions">решения</a></li>
+              <li><a href="#" class="link link--menu scroll" data-href="#stages">этапы</a></li>
+              <li><a href="#" class="link link--menu scroll" data-href="#projects">проекты</a></li>
+              <li><a href="#" class="link link--menu scroll" data-href="#reviews">отзывы</a></li>
+              <li><a href="#" class="link link--menu scroll" data-href="#contacts">контакты</a></li>
             </ul>
             <div class="header-phone">
               <a href="tel:+71111111111" class="link link--phone"><i class="fas fa-phone-alt"></i>+7 (111) 111-11-11</a>
@@ -90,7 +90,7 @@
                 <span class="lines-item bl mm"></span>
                 <span class="lines-item bl mm"></span>
                 <span class="lines-item bl mm"></span>
-                <span class="lines-item bl"></span>
+                <span class="lines-item bl"><span class="anim anim-r"></span></span>
                 <span class="lines-item bl"><span class="anim"></span></span>  
             </div>
           </div>
@@ -151,7 +151,7 @@
                   </div>
                 </div>
                 <div class="form-row form-phone">
-                  <input type="text" class="field field-normal" placeholder="Ваш номер телефона" name="phone">
+                  <input type="text" class="field field-normal field-phone" placeholder="Ваш номер телефона" name="phone">
                   <div class="form-icon">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
                   </div>
@@ -170,7 +170,7 @@
           </div>
         </div>
       </section>
-      <section class="section section-about">
+      <section class="section section-about" id="about">
         <div class="square"  >
                 <div class="square-item" id="square4"><img src="img/square/4.png"  data-depth="0.5" alt=""></div>
                 <div class="square-item" id="square5"><img src="img/square/5.png"  data-depth="0.75" alt=""></div>
@@ -229,6 +229,18 @@
             </div>
             </div>
             <div class="advanced">
+                <div class="advanced-plus">
+                    <div class="advanced-plus__col">
+                        <div class="advanced-plus__item"><img src="img/plus.png" alt=""></div>
+                        <div class="advanced-plus__item"><img src="img/plus.png" alt=""></div>
+                        <div class="advanced-plus__item"><img src="img/plus.png" alt=""></div>
+                    </div>
+                    <div class="advanced-plus__col">
+                        <div class="advanced-plus__item"><img src="img/plus.png" alt=""></div>
+                        <div class="advanced-plus__item"><img src="img/plus.png" alt=""></div>
+                        <div class="advanced-plus__item"><img src="img/plus.png" alt=""></div>
+                    </div>
+                </div>
               <div class="title">
                 <h2 class="h2 st bl ta-c">
                   наши преимущества
@@ -556,7 +568,7 @@
           </div>
         </div>
       </section>
-      <section class="section section-system">
+      <section class="section section-system" id="solutions">
         <div class="square" >
                 <div class="square-item" id="square6"><img src="img/square/4.png" alt="" data-depth="0.5"></div>
                 <div class="square-item" id="square7"><img src="img/square/5.png" alt="" data-depth="0.75"></div>
@@ -711,7 +723,7 @@
           </div>
         </div>
       </section>
-      <section class="section section-formnow">
+      <section class="section section-formnow" id="callback">
         <div class="lines">
             <div class="lines-items">
                 <span class="lines-item"></span>
@@ -739,7 +751,7 @@
                   </div>
                 </div>
                 <div class="form-row form-phone">
-                  <input type="text" class="field field-normal" placeholder="Ваш номер телефона" name="phone">
+                  <input type="text" class="field field-normal field-phone" placeholder="Ваш номер телефона" name="phone">
                   <div class="form-icon">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
                   </div>
@@ -862,13 +874,13 @@ IP телефония, видеоконференцсвязь
               </p>
             </div>
             <div class="office-content">
-                <a href="#" class="btn btn-submit">Получить расчет</a>
+                <a href="#" class="btn btn-submit scroll" data-href="#callback">Получить расчет</a>
             </div>
               
           </div>
         </div>
       </section>
-      <section class="section section-montaz">
+      <section class="section section-montaz" id="stages">
         <div class="square" >
                 <div class="square-item" id="square11"><img src="img/square/4.png" alt="" data-depth="0.5"></div>
                 <div class="square-item" id="square12"><img src="img/square/5.png" alt="" data-depth="0.75"></div>
@@ -947,7 +959,7 @@ IP телефония, видеоконференцсвязь
                         </div>
                     </div>
                 </div>
-                <div class="montaz-all">
+                <div class="montaz-all scroll" data-href="#callback">
                     <span class="montaz-all__calendar">
                         <img src="img/calendar.png" alt="calendar">
                     </span>
@@ -959,7 +971,7 @@ IP телефония, видеоконференцсвязь
           </div>
         </div>
       </section>
-      <section class="section section-works">
+      <section class="section section-works" id="projects">
         <div class="lines">
             <div class="lines-items">
                 <span class="lines-item"></span>
@@ -1967,7 +1979,7 @@ IP телефония, видеоконференцсвязь
           </div>
         </div>
       </section>
-      <section class="section section-reviews">
+      <section class="section section-reviews" id="reviews">
         <div class="wrapper">
           <div class="reviews">
             <div class="title">
@@ -2047,7 +2059,7 @@ IP телефония, видеоконференцсвязь
                   </div>
                 </div>
                 <div class="form-row form-phone">
-                  <input type="text" class="field field-normal" placeholder="Ваш номер телефона" name="phone">
+                  <input type="text" class="field field-normal field-phone" placeholder="Ваш номер телефона" name="phone">
                   <div class="form-icon">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
                   </div>
@@ -2065,7 +2077,7 @@ IP телефония, видеоконференцсвязь
           </div>
         </div>
       </section>
-      <section class="section section-end">
+      <section class="section section-end" id="contacts">
             <div class="lines-v">
                 <div class="lines-v-items">
                     <span class="lines-v-item bl">
@@ -2082,7 +2094,7 @@ IP телефония, видеоконференцсвязь
                 <span class="lines-item bl mh"></span>
                 <span class="lines-item bl mh"></span>
                 <span class="lines-item bl"><span class="anim"></span></span>
-                <span class="lines-item bl"></span>  
+                <span class="lines-item bl"><span class="anim anim-r"></span></span>  
             </div>
           </div>
         <div class="wrapper">
@@ -2112,7 +2124,7 @@ IP телефония, видеоконференцсвязь
                   </div>
                 </div>
                 <div class="form-row form-phone">
-                  <input type="text" class="field field-normal" placeholder="Ваш номер телефона" name="phone">
+                  <input type="text" class="field field-normal field-phone" placeholder="Ваш номер телефона" name="phone">
                   <div class="form-icon">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
                   </div>
@@ -2131,12 +2143,12 @@ IP телефония, видеоконференцсвязь
           </div>
           </div>
                 <div class="footer-content">
-                    <a href="#" class="link link--fresh">
+                    <a href="http://freshweb.agency/?utm_source=our-sites&utm_medium=footer-ayacom" target="_blank" rel="nofollow" class="link link--fresh">
                       <img src="img/logo_fresh_new.png" alt="logo_fresh_new">
                     </a>
                     <div class="footer-phone">
                       <a href="tel:+71111111111" class="link link--phone"><i class="fas fa-phone-alt"></i>+7 (111) 111-11-11</a>
-                      <a href="tel:+71111111111" class="link link--phone"><i class="fas fa-phone-alt"></i>+7 (111) 111-11-11</a>
+                      <a href="mailto:admin@admin.com" class="link link--phone"><i class="fas fa-envelope"></i>admin@admin.com</a>
                     </div>
                   </div>
             

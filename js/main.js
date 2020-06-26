@@ -88,6 +88,8 @@ var sliderTabs = new Swiper('.works-tabs-slider', {
 var sliderOffice = new Swiper('.office-slider', {
         speed: 800,
         slidesPerView: 'auto',
+        loop: true,
+        loopedSlides: 3,
         simulateTouch: false,
         spaceBetween: 20,
         navigation: {
@@ -117,6 +119,8 @@ var sliderSklad = new Swiper('.sklad-slider', {
         speed: 800,
         slidesPerView: 'auto',
         simulateTouch: false,
+        loop: true,
+        loopedSlides: 3,
         spaceBetween: 20,
         navigation: {
             nextEl: '.works--next',
@@ -145,6 +149,8 @@ var sliderSklad = new Swiper('.sklad-slider', {
         speed: 800,
         slidesPerView: 'auto',
         simulateTouch: false,
+        loop: true,
+        loopedSlides: 3,
         spaceBetween: 20,
         navigation: {
             nextEl: '.works--next',
@@ -177,6 +183,7 @@ var sliderSklad = new Swiper('.sklad-slider', {
         slidesPerView: 1,
         simulateTouch: false,
         spaceBetween: 0,
+        loop: true,
         effect: 'fade',
         navigation: {
             nextEl: '.reviews--next',
@@ -210,6 +217,7 @@ var sliderSklad = new Swiper('.sklad-slider', {
       spaceBetween: 40,
       slidesPerView: 3,
       speed: 800,
+      loop: true,
       // loop: true,
       // freeMode: true,
       simulateTouch: false,
@@ -223,6 +231,7 @@ var sliderSklad = new Swiper('.sklad-slider', {
       spaceBetween: 0,
       speed: 800,
       slidesPerView: 1,
+      loop: true,
        simulateTouch: false,
         effect: 'fade',
 	  fadeEffect: {
@@ -307,11 +316,13 @@ $('body').on('click', '.fancybtn', function(event) {
         var th = $(this);
         $.ajax({
             type: "POST",
-                        url: "send.php",
+                        url: "/send_email",
                         data: th.serialize(),
                         success: function (data) {
                             $.fancybox.close()
-                            popup = "#thanks"
+                            popup = "#thanks";
+                            var thank_mess = $(th).data('thank_mess');
+                            $('#thanks').find('.p').text(thank_mess);
                             $.fancybox.open({
                                 src: popup,
                                 type: 'inline',
@@ -319,9 +330,9 @@ $('body').on('click', '.fancybtn', function(event) {
                             });
                             setTimeout(function () {
                                 th.trigger("reset");
-                                window.location.href ='https://vsbrothers.com.ua/';
+                                window.location.reload();
                             }, 3000);
-                            setTimeout(function(){$.fancybox.close()},15000)
+                            // setTimeout(function(){$.fancybox.close()},15000)
                         }
                     });
                     event.preventDefault();
@@ -331,6 +342,134 @@ setTimeout(function(){
 $('.preloader').fadeOut('400');
 }, 500)
  
+
+ var os = new OnScreen({
+    tolerance: 0,
+    debounce: 100,
+    container: window
+});
+
+// Cache selectors
+var lastId,
+  topMenu = $(".header-menu"),
+  // topMenuHeight = topMenu.outerHeight() + 15,
+  // All list items
+  menuItems = topMenu.find("a"),
+  // Anchors corresponding to menu items
+  scrollItems = menuItems.map(function() {
+    var item = $($(this).attr("data-href"));
+    if (item.length) {
+      return item;
+    }
+  });
+
+  // console.log(scrollItems)
+
+// Bind click handler to menu items
+// so we can get a fancy scroll animation
+// menuItems.click(function(e) {
+//   var href = $(this).attr("href"),
+//     offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
+//   $('html, body').stop().animate({
+//     scrollTop: offsetTop
+//   }, 300);
+//   e.preventDefault();
+// });
+
+// Bind to scroll
+$(window).scroll(function() {
+  // Get container scroll position
+  var fromTop = $(this).scrollTop() + 250;
+
+  // Get id of current scroll item
+  var cur = scrollItems.map(function() {
+    if ($(this).offset().top < fromTop)
+      return this;
+  });
+  // console.log(cur)
+  // Get the id of the current element
+  cur = cur[cur.length - 1];
+  var id = cur && cur.length ? cur[0].id : "";
+
+  if (lastId !== id) {
+    lastId = id;
+    // Set/remove active class
+    console.log(id)
+    // menuItems
+      $('.link--menu').removeClass("active")
+     $('[data-href="#' + id +'"]').addClass("active");
+  }
+});
+
+
+
+os.on('enter', '.advanced', (element, event) => {
+    $('.advanced').addClass('animate');
+
+});
+
+os.on('enter', '.system', (element, event) => {
+    $('.system').addClass('animate')
+});
+
+
+os.on('enter', '.section-coorp', (element, event) => {
+    $('.section-coorp').addClass('animate')
+    $('.section-office').addClass('animate')
+});
+
+function toggleHeader(){
+	    var scroll_status = $(document).scrollTop();
+	    if(scroll_status > 0)
+	        $(".section-header").addClass("fixed");
+	    else
+	        $(".section-header").removeClass("fixed");
+	}
+	
+$(document).scroll(function(){
+	    toggleHeader();
+	})
+
+toggleHeader();
+
+// os.on('enter', '.section-main', (element, event) => {
+//    	$('.section-header').removeClass('fixed')
+// });
+
+// os.on('leave', '.section-main', (element, event) => {
+//    	$('.section-header').addClass('fixed')
+// });
+
+
+
+$('body').on("click",".scroll", function (event) {
+		event.preventDefault();
+		var id  = $(this).attr('data-href'),
+			top = $(id).offset().top;
+			if ($(this).hasClass('link--menu')) {
+				$('.link--menu').removeClass('active')
+    			$(this).addClass('active');
+			}
+		
+		$('body,html').animate({scrollTop: top}, 1500);
+	});
+
+
+$('.field-phone').mask('+0 (000) 000-00-00')
+    $('body').on('focus', '.field-phone', function(event) {
+        if ($(this).val() == '') {
+            $(this).val('+')
+        }
+    })
+    $('body').on('blur', '.field-phone', function(event) {
+        if ($(this).val() == '+') {
+            $(this).val('')
+        }
+    });
+
+// os.on('enter', '.advanced', (element, event) => {
+//     $('.advanced').addClass('animate')
+// });
 
 });
 
