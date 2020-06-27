@@ -5215,6 +5215,8 @@ input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
 
 .link--menu:active:before { width: 100%; }
 
+.link--toggle { display: none; }
+
 .link--phone { color: #ffffff; font-size: 1.9rem; font-weight: 500; letter-spacing: 0.057rem; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; }
 
 .link--phone i { font-size: 1.6rem; color: #b92126; display: block; margin-right: 1rem; }
@@ -5593,7 +5595,7 @@ input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
 
 .section-office .office .title .ss { font-weight: 700; text-transform: uppercase; font-family: "Bender", sans-serif; font-size: 2.4rem; letter-spacing: 0.072rem; }
 
-.section-office .office .title .ss span { color: #db1d24; letter-spacing: 0.108rem; }
+.section-office .office .title .ss span { color: #db1d24; letter-spacing: 0.108rem; font-size: 3.6rem; }
 
 .section-works .works { padding: 13rem 0 14rem 0; }
 
@@ -5610,6 +5612,8 @@ input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
 .section-works .works-content__head .link:last-child { margin-right: 0; }
 
 .section-works .works-slider { width: 100%; }
+
+.section-works .works-slider .swiper-pagination { display: none; }
 
 .section-works .works-tabs-slider .tabs-slide { -webkit-transition: .05s; -o-transition: .05s; transition: .05s; }
 
@@ -5920,6 +5924,8 @@ input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
 
 @keyframes Aheader { 0% { -webkit-transform: translateY(-100%); transform: translateY(-100%); }
   100% { -webkit-transform: translateY(0); transform: translateY(0); } }
+
+.menu { display: none; }
 
 .fancybox-container .fancybox-bg { background: #000; opacity: 0; }
 
