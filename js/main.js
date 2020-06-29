@@ -104,7 +104,11 @@ var sliderOffice = new Swiper('.office-slider', {
 		    clickable: true,
 	  	},
         breakpoints: {
-            
+            300: {
+                spaceBetween: 20,
+                slidesPerView: 1,
+                loopedSlides: 1,
+            },
             660: {
                 simulateTouch: true,
                 spaceBetween: 20,
@@ -158,7 +162,11 @@ var sliderSklad = new Swiper('.sklad-slider', {
 		    clickable: true,
 	  	},
         breakpoints: {
-            
+            300: {
+                spaceBetween: 20,
+                slidesPerView: 1,
+                loopedSlides: 1,
+            },
             660: {
                 simulateTouch: true,
                 spaceBetween: 20,
@@ -264,9 +272,9 @@ var sliderSklad = new Swiper('.sklad-slider', {
     		$('.link--tab').removeClass('active')
     		$(this).addClass('active');
     		sliderTabs.slideTo($(this).data('tabs'));
-    		sliderOffice.slideTo(0)
-			sliderSklad.slideTo(0)
-			sliderComp.slideTo(0)
+    		sliderOffice.slideToLoop(0)
+			sliderSklad.slideToLoop(0)
+			sliderComp.slideToLoop(0)
     	}
     	
     	/* Act on the event */
@@ -488,6 +496,13 @@ $('.field-phone').mask('+0 (000) 000-00-00')
     	$(this).toggleClass('active');
     	$('.section-header').toggleClass('open');
     	$('.menu').toggleClass('open');
+    });
+
+    $('.link--show').on('click', function(event) {
+    	event.preventDefault();
+    	$('.advanced-items').find('.vm-none').toggleClass('show')
+    	$(this).toggleClass('active');
+    	/* Act on the event */
     });
 
 // os.on('enter', '.advanced', (element, event) => {
