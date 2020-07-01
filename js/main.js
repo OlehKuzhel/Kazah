@@ -58,6 +58,41 @@ if (isMobile != true) {
 	new Parallax(square14);
 	new Parallax(square15);
 	new Parallax(square16);
+
+
+ var throttle = function(type, name, obj) {
+ var obj = obj || window;
+ var running = false;
+ var func = function() {
+ if (running) { return; }
+ running = true;
+ requestAnimationFrame(function() {
+ obj.dispatchEvent(new CustomEvent(name));
+ running = false;
+ });
+ };
+ obj.addEventListener(type, func);
+ };
+ throttle ("scroll", "optimizedScroll");
+
+	 
+	window.addEventListener("scroll", function() {
+		square3.style.transform = "rotate("+window.pageYOffset/40+"deg)";
+		square4.style.transform = "rotate("+window.pageYOffset/25+"deg)";
+		square5.style.transform = "rotate("+window.pageYOffset/10+"deg)";
+		square6.style.transform = "rotate("+window.pageYOffset/20+"deg)";
+		square7.style.transform = "rotate("+window.pageYOffset/25+"deg)";
+		square8.style.transform = "rotate("+window.pageYOffset/10+"deg)";
+		square9.style.transform = "rotate("+window.pageYOffset/20+"deg)";
+		square10.style.transform = "rotate("+window.pageYOffset/15+"deg)";
+		square11.style.transform = "rotate("+window.pageYOffset/20+"deg)";
+		square12.style.transform = "rotate("+window.pageYOffset/25+"deg)";
+		square13.style.transform = "rotate("+window.pageYOffset/10+"deg)";
+		square14.style.transform = "rotate("+window.pageYOffset/30+"deg)";
+		square15.style.transform = "rotate("+window.pageYOffset/20+"deg)";
+		square16.style.transform = "rotate("+window.pageYOffset/15+"deg)";
+	});
+
 }
 	$('body').on('click', '.link--tag', function(event) {
 		event.preventDefault();
@@ -358,6 +393,7 @@ $('body').on('click', '.fancybtn', function(event) {
 
 setTimeout(function(){
 $('.preloader').fadeOut('400');
+$('.main-content h1').addClass('anim')
 }, 500)
  
 
