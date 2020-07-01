@@ -362,6 +362,17 @@ var sliderSklad = new Swiper('.sklad-slider', {
 
 $('body').on('click', '.fancybtn', function(event) {
         popup = $(this).data('popup')
+        if (popup == '#revpop') {
+        	$parent = $(this).parents('.reviews-slide');
+        	$text = $parent.find('.reviews-slide__content').data('fulltext');
+        	$img = $parent.find('.reviews-slide__top img').attr('src');
+        	$title = $parent.find('.reviews-slide__top h3').text();
+
+        	$(popup).find('h3').text($title);
+        	$(popup).find('img').attr('src', $img);
+        	$(popup).find('.reviews-text').html($text);
+
+        }
         if (popup == '#working') {
         	$text = $(this).data('text');
         	$img = $(this).data('img');
