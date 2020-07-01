@@ -93,6 +93,19 @@ if (isMobile != true) {
 		square16.style.transform = "rotate("+window.pageYOffset/15+"deg)";
 	});
 
+} else {
+    newsContent= $('.reviews-slider').find('.reviews-slide__content')
+
+	   newsContent.each(function() {
+		var $this = $(this);
+		var text = $this.html();
+	  $this.attr('data-fulltext', text);
+	  var small = text.substring(0, 280);
+	  
+		  if(small.length < text.length) {
+		  	$this.html(small + '...');
+		  }
+	})
 }
 	$('body').on('click', '.link--tag', function(event) {
 		event.preventDefault();
@@ -218,23 +231,26 @@ var sliderSklad = new Swiper('.sklad-slider', {
         speed: 800,
         slidesPerView: 1,
         simulateTouch: false,
-        spaceBetween: 0,
+        spaceBetween: 20,
         loop: true,
-        effect: 'fade',
+        effect: 'slide',
         navigation: {
             nextEl: '.reviews--next',
             prevEl: '.reviews--prev',
         },
-        fadeEffect: {
-		    crossFade: true
-		  },
+    //     fadeEffect: {
+		  //   crossFade: true
+		  // },
         breakpoints: {
-            
+            320: {
+                // autoHeight: true,
+            },
             660: {
                 simulateTouch: true,
                 slidesPerView: 1,
-                centeredSlides: true,
-                spaceBetween: 0,
+                // autoHeight: false,
+                // centeredSlides: true,
+                spaceBetween: 20,
                 slidesOffsetBefore: 0,
                 slidesOffsetAfter: 0,
             },
