@@ -5853,6 +5853,8 @@ input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
 
 .lines-item .anim-r { -webkit-animation: tobottom 4s linear infinite alternate; animation: tobottom 4s linear infinite alternate; }
 
+.lines-item .anim.sl { -webkit-animation-duration: 6s; animation-duration: 6s; }
+
 .lines-item:nth-child(1) { left: -5rem; }
 
 .lines-item:nth-child(2) { left: 31.5rem; }
@@ -5899,9 +5901,13 @@ input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
 
 .lines-v-item:nth-child(1) .anim { left: 100%; -webkit-animation: toright 4s linear infinite alternate; animation: toright 4s linear infinite alternate; }
 
+.lines-v-item:nth-child(1) .anim-r { -webkit-animation: toleft 6s linear infinite alternate; animation: toleft 6s linear infinite alternate; }
+
 .lines-v-item:nth-child(2) { bottom: -webkit-calc(12.5rem - 1px); bottom: calc(12.5rem - 1px); }
 
 .lines-v-item:nth-child(2) .anim { left: 0; -webkit-animation: toleft 4s linear infinite alternate; animation: toleft 4s linear infinite alternate; }
+
+.lines-v-item:nth-child(2) .anim-r { -webkit-animation: toright 6s linear infinite alternate; animation: toright 6s linear infinite alternate; }
 
 .lines-v-item.bl { background: rgba(255, 255, 255, 0.1); }
 
