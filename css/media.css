@@ -90,7 +90,7 @@
   .section-partners .partners-little__content { padding: 5rem 15rem; height: auto; max-width: 100%; }
   .section-partners .partners-little__content .swiper-slide { height: initial; }
   .section-partners .partners-little-slide img { max-width: 14rem; max-height: 5.5rem; }
-  .section-partners .partners-bg { background: url(../img/mobile/1.png) no-repeat center center; -webkit-background-size: 100% 100%; background-size: 100% 100%; }
+  .section-partners .partners-bg { background: url(../img/mobile/1.webp) no-repeat center center; -webkit-background-size: 100% 100%; background-size: 100% 100%; }
   .section-about:before { position: absolute; bottom: 100%; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); width: 100%; height: 4rem; background: url(../img/bga1.png) no-repeat center center; -webkit-background-size: 100% 100%; background-size: 100% 100%; z-index: 1; content: ''; pointer-events: none; }
   .section-about .lines { display: none; }
   .section-about .square { display: none; }
@@ -122,7 +122,7 @@
   .section-formnow:after { content: none; }
   .section-formnow .lines { display: none; }
   .section-formnow .formnow { padding: 10rem 0; }
-  .section-formnow .formnow-bg { background: url(../img/mobile/2.png) no-repeat center center; -webkit-background-size: 100% 100%; background-size: 100% 100%; }
+  .section-formnow .formnow-bg { background: url(../img/mobile/2.webp) no-repeat center center; -webkit-background-size: 100% 100%; background-size: 100% 100%; }
   .section-formnow .formnow .form-row { max-width: 37.5rem; margin-bottom: 1rem; }
   .section-formnow .formnow .form-rows { -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
   .section-formnow .formnow .form-submit { max-width: 37.5rem; margin-top: 0; }
@@ -144,7 +144,7 @@
   .section-office.animate:before { bottom: 40%; }
   .section-office .lines { display: none; }
   .section-office .office { padding: 13rem 0 11rem 0; }
-  .section-office .office-bg { background: url(../img/mobile/3.png) no-repeat center center; -webkit-background-size: 100% 100%; background-size: 100% 100%; }
+  .section-office .office-bg { background: url(../img/mobile/3.webp) no-repeat center center; -webkit-background-size: 100% 100%; background-size: 100% 100%; }
   .section-montaz .wrapper { padding: 0 6rem; }
   .section-montaz .lines { display: none; }
   .section-montaz .square { display: none; }
@@ -164,7 +164,7 @@
   .section-works .works-slider .swiper-pagination .swiper-pagination-bullet { width: 1.2rem; height: 1.2rem; display: block; background: #c5c5c5; -webkit-transition: 0.24s linear; -o-transition: 0.24s linear; transition: 0.24s linear; cursor: pointer; margin-right: 1.5rem; -webkit-border-radius: 100%; border-radius: 100%; }
   .section-works .works-slider .swiper-pagination .swiper-pagination-bullet:last-child { margin-right: 0; }
   .section-works .works-slider .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active { background: #ff0000; }
-  .section-works .works-bg { background: url(../img/mobile/4.png) no-repeat center center; -webkit-background-size: 100% 100%; background-size: 100% 100%; }
+  .section-works .works-bg { background: url(../img/mobile/4.webp) no-repeat center center; -webkit-background-size: 100% 100%; background-size: 100% 100%; }
   .section-works .works-slide { max-width: -webkit-calc(25% - 2rem); max-width: calc(25% - 2rem); }
   .section-works .works-slide.big-slide { max-width: -webkit-calc(50% - 2rem); max-width: calc(50% - 2rem); }
   .section-happy { -webkit-background-size: auto 30rem; background-size: auto 30rem; }
@@ -197,7 +197,7 @@
   .section-end .end-text .p { text-align: center; }
   .section-end .footer-content { padding: 6rem 0; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
   .section-end .footer-phone { margin-top: 3.5rem; }
-  .menu { display: block; position: fixed; top: 0; left: 0; width: 100%; height: 100vh; -webkit-transition: 0.24s linear; -o-transition: 0.24s linear; transition: 0.24s linear; background: url(../img/mobile/menu.png) no-repeat center center; -webkit-background-size: cover; background-size: cover; z-index: 4; padding-top: 13rem; padding-bottom: 0; opacity: 0; visibility: hidden; -webkit-transform: translateY(-100%); -ms-transform: translateY(-100%); transform: translateY(-100%); }
+  .menu { display: block; position: fixed; top: 0; left: 0; width: 100%; height: 100vh; -webkit-transition: 0.24s linear; -o-transition: 0.24s linear; transition: 0.24s linear; background: url(../img/mobile/menu.webp) no-repeat center center; -webkit-background-size: cover; background-size: cover; z-index: 4; padding-top: 13rem; padding-bottom: 0; opacity: 0; visibility: hidden; -webkit-transform: translateY(-100%); -ms-transform: translateY(-100%); transform: translateY(-100%); }
   .menu.open { opacity: 1; visibility: visible; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
   .menu ul { list-style: none; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; height: 100%; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; margin: 0; padding: 0; }
   .menu ul li { margin-bottom: 7rem; }
@@ -305,7 +305,7 @@
   .section-coorp .coorp-item .text .p br { display: none; }
   .section-coorp .coorp-item:nth-child(1) { margin-top: 0; }
   .section-coorp .coorp-item:nth-child(4) { margin-top: 0; margin-bottom: 0; }
-  .section-office:before { background: url(../img/mobile/mobbg.png) no-repeat center bottom; -webkit-background-size: 100% auto; background-size: 100% auto; bottom: 30%; }
+  .section-office:before { background: url(../img/mobile/mobbg.webp) no-repeat center bottom; -webkit-background-size: 100% auto; background-size: 100% auto; bottom: 30%; }
   .section-office.animate:before { bottom: 52.5%; }
   .section-office.animate:after { content: none; }
   .section-office .office { padding: 6rem 0; }
