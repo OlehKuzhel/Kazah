@@ -1,8 +1,8 @@
-WebFont.load({
-    google: {
-        families: ['Montserrat:400,500,600,700:cyrillic']
-    }
-});
+// WebFont.load({
+//     google: {
+//         families: ['Montserrat:400,500,600,700:cyrillic']
+//     }
+// });
 
 $(document).ready(function($) {
 
@@ -146,10 +146,16 @@ var sliderOffice = new Swiper('.office-slider', {
         speed: 800,
         init: false,
         slidesPerView: 'auto',
+        watchSlidesVisibility: true,
         loop: true,
         loopedSlides: 3,
         simulateTouch: false,
         spaceBetween: 20,
+        // preloadImages: false,
+    // lazy: true,
+     // lazy: {
+    // loadOnTransitionStart: true,
+  // },
         navigation: {
             nextEl: '.works--next',
             prevEl: '.works--prev',
@@ -179,6 +185,12 @@ var sliderSklad = new Swiper('.sklad-slider', {
         slidesPerView: 'auto',
         simulateTouch: false,
         loop: true,
+         // lazy: {
+    // loadOnTransitionStart: true,
+  // },
+        watchSlidesVisibility: true,
+        // preloadImages: false,
+    // lazy: true,
         loopedSlides: 3,
         spaceBetween: 20,
         init: false,
@@ -209,7 +221,13 @@ var sliderSklad = new Swiper('.sklad-slider', {
         loop: true,
         init: false,
         loopedSlides: 3,
+         // lazy: {
+    // loadOnTransitionStart: true,
+  // },
+        watchSlidesVisibility: true,
         spaceBetween: 20,
+        // preloadImages: false,
+    // lazy: true,
         navigation: {
             nextEl: '.works--next',
             prevEl: '.works--prev',
@@ -243,6 +261,13 @@ var sliderSklad = new Swiper('.sklad-slider', {
         simulateTouch: false,
         spaceBetween: 20,
         loop: true,
+        // preloadImages: false,
+        init: false,
+        // lazy: true,
+     // lazy: {
+    // loadOnTransitionStart: true,
+    // loadPrevNext: true,
+  // },
         effect: 'slide',
         navigation: {
             nextEl: '.reviews--next',
@@ -275,7 +300,13 @@ var sliderSklad = new Swiper('.sklad-slider', {
       loop: true,
       simulateTouch: false,
       direction: 'vertical',
-      init: false,
+      // preloadImages: false,
+        init: false,
+        // lazy: true,
+     // lazy: {
+    // loadOnTransitionStart: true,
+    // loadPrevNext: true,
+  // },
       watchSlidesVisibility: true,
       watchSlidesProgress: true,
       breakpoints: {
@@ -302,7 +333,13 @@ var sliderSklad = new Swiper('.sklad-slider', {
       slidesPerView: 1,
       loop: true,
        simulateTouch: false,
-       init: false,
+       // preloadImages: false,
+        init: false,
+        // lazy: true,
+     // lazy: {
+    // loadOnTransitionStart: true,
+    // loadPrevNext: true,
+  // },
         effect: 'fade',
 	  fadeEffect: {
 			crossFade: true
@@ -425,6 +462,7 @@ galleryTop.init();
 sliderOffice.init();
 sliderSklad.init();
 sliderComp.init();
+sliderReviews.init();
 $('.main-content h1').addClass('anim')
 }, 500)
  
